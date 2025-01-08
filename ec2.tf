@@ -4,7 +4,6 @@ provider "aws" {
 resource "aws_instance" "myVM" {
   ami           = "ami-000840282929391b9"
   instance_type = "t2.micro"
-  key_name      = "devops-dirane"
   tags = {
     Name = "ec2-dirane"
   }
